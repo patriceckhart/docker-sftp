@@ -23,6 +23,9 @@ Include /etc/ssh/sshd_config.d/*.conf
 #HostKey /etc/ssh/ssh_host_ecdsa_key
 #HostKey /etc/ssh/ssh_host_ed25519_key
 
+HostKeyAlgorithms +ssh-rsa
+PubkeyAcceptedKeyTypes +ssh-rsa
+
 # Ciphers and keying
 #RekeyLimit default none
 
